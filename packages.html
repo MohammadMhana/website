@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loving Homes | الحزم</title>
+  <link rel="stylesheet" href="packages.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <nav class="nav" id="mainNav" aria-label="التنقل الرئيسي">
+        <a class="nav__link" href="index.html">الرئيسية</a>
+        <a class="nav__link" href="facilities.html">المرافق</a>
+        <a class="nav__link" href="services.html">الخدمات</a>
+        <a class="nav__link nav__link--active" href="packages.html">الحزم</a>
+        <a class="nav__link" href="contact.html">تواصل معنا</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="فتح/إغلاق القائمة" aria-expanded="false">☰</button>
+
+      <div class="a11y-text" aria-label="أداة تغيير حجم النص">
+        <button class="a11y-btn" type="button" data-font="down" aria-label="تصغير النص">A-</button>
+        <button class="a11y-btn" type="button" data-font="reset" aria-label="حجم افتراضي">A</button>
+        <button class="a11y-btn" type="button" data-font="up" aria-label="تكبير النص">A+</button>
+        <span class="sr-only" id="fontStatus" aria-live="polite"></span>
+      </div>
+
+      <div class="brand" aria-label="Loving Homes">
+        <div class="brand__logo" aria-hidden="true">LH</div>
+        <div class="brand__text" dir="ltr">
+          <h1 class="brand__name">Loving Homes</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <div>
+          <h2>الحزم</h2>
+          <p>اختر الحزمة المناسبة، ويمكنك دائمًا التواصل معنا لطلب حزمة مخصصة.</p>
+        </div>
+
+        <div class="info-card">
+          <h3>نصيحة</h3>
+          <p class="muted">للاستفسار عن الأسعار أو مدة الإقامة، اذهب إلى صفحة التواصل.</p>
+          <a class="btn btn--primary" href="contact.html">تواصل معنا</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="tools">
+          <h3 class="section__title">اختر الحزمة</h3>
+        </div>
+
+        <div class="grid" id="packagesGrid">
+          <article class="card" data-type="stay">
+            <div class="card__top">
+              <h4>الحزمة المميزة</h4>
+              <span class="badge">الأكثر شمولاً</span>
+            </div>
+            <ul class="list">
+              <li>المشي أربعة مرات / ممارسة أربعة أنشطة يومياً</li>
+              <li>ساحة عشب خاصة</li>
+              <li>تحديثات / صور يومية</li>
+              <li>مكافآت (على النحو المتفق عليه مع صاحب الحيوان الأليف)</li>
+            </ul>
+            <div class="card__actions">
+              <a class="btn btn--primary" href="contact.html">احجز / اسأل</a>
+              <button class="btn btn--outline" type="button" data-details="premium">تفاصيل</button>
+            </div>
+          </article>
+
+          <article class="card" data-type="stay">
+            <div class="card__top">
+              <h4>الحزمة الكلاسيكية</h4>
+              <span class="badge badge--soft">متوازنة</span>
+            </div>
+            <ul class="list">
+              <li>المشي ثلاثة مرات / ممارسة ثلاثة أنشطة يومياً</li>
+              <li>حظيرة لعب داخلية</li>
+              <li>منطقة للاسترخاء</li>
+              <li>جلسة حلاقة وتنظيف</li>
+            </ul>
+            <div class="card__actions">
+              <a class="btn btn--primary" href="contact.html">احجز / اسأل</a>
+              <button class="btn btn--outline" type="button" data-details="classic">تفاصيل</button>
+            </div>
+          </article>
+
+          <article class="card" data-type="day">
+            <div class="card__top">
+              <h4>حزمة اليوم</h4>
+              <span class="badge badge--soft">قصيرة</span>
+            </div>
+            <ul class="list">
+              <li>المشي مرتين يومياً</li>
+              <li>منطقة لعب خارجية</li>
+              <li>مسار الرشاقة</li>
+              <li>نفق الرمل</li>
+            </ul>
+            <div class="card__actions">
+              <a class="btn btn--primary" href="contact.html">احجز / اسأل</a>
+              <button class="btn btn--outline" type="button" data-details="day">تفاصيل</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__overlay" data-close="true"></div>
+    <div class="modal__box" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <div class="modal__header">
+        <h3 id="modalTitle">تفاصيل الحزمة</h3>
+        <button class="modal__close" type="button" data-close="true" aria-label="إغلاق">✕</button>
+      </div>
+      <div class="modal__body" id="modalBody"></div>
+      <div class="modal__footer">
+        <a class="btn btn--primary" href="contact.html">تواصل للحجز</a>
+        <button class="btn btn--outline" type="button" data-close="true">إغلاق</button>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Loving Homes. جميع الحقوق محفوظة.</p>
+      <a class="footer__link" href="contact.html">تواصل معنا</a>
+    </div>
+  </footer>
+
+  <script src="packages.js"></script>
+</body>
+</html>

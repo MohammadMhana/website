@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loving Homes | المرافق المقدمة</title>
+  <link rel="stylesheet" href="facilities.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__inner">
+
+      <nav class="nav" id="mainNav" aria-label="التنقل الرئيسي">
+        <a class="nav__link" href="index.html">الرئيسية</a>
+        <a class="nav__link nav__link--active" href="facilities.html">المرافق</a>
+        <a class="nav__link" href="services.html">الخدمات</a>
+        <a class="nav__link" href="packages.html">الحزم</a>
+        <a class="nav__link" href="contact.html">تواصل معنا</a>
+      </nav>
+
+      
+
+      <div class="tools" aria-label="أدوات الوصول">
+        <div class="a11y-text" aria-label="أداة تغيير حجم النص">
+          <button class="a11y-btn" type="button" data-font="down" aria-label="تصغير النص">A-</button>
+          <button class="a11y-btn" type="button" data-font="reset" aria-label="حجم افتراضي">A</button>
+          <button class="a11y-btn" type="button" data-font="up" aria-label="تكبير النص">A+</button>
+          <span class="sr-only" id="fontStatus" aria-live="polite"></span>
+        </div>
+      </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="فتح/إغلاق القائمة" aria-expanded="false">☰</button>
+
+      <div class="brand" aria-label="Loving Homes">
+        <div class="brand__logo" aria-hidden="true">LH</div>
+        <div class="brand__text" dir="ltr">
+          <h1 class="brand__name">Loving Homes</h1>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="page-hero">
+      <div class="page-hero__inner">
+        <div>
+          <h2>المرافق المقدمة</h2>
+          <p>فيما يلي المرافق الأساسية والإضافية المتوفرة لضمان راحة وأمان كلبك.</p>
+        </div>
+
+        <div class="info-card">
+          <h3>معلومة سريعة</h3>
+          <p class="muted">يمكنك اختيار الحزمة المناسبة من صفحة الحزم، ثم التواصل معنا لأي استفسار.</p>
+          <a class="btn btn--primary" href="packages.html">استعرض الحزم</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h3 class="section__title">المرافق الأساسية</h3>
+
+        <div class="grid">
+          <article class="card">
+            <h4>صالة للحلاقة ومتجر</h4>
+            <p class="muted">خدمات عناية ونظافة مع إمكانية توفير احتياجات أساسية.</p>
+          </article>
+
+          <article class="card">
+            <h4>غرف مزودة بتدفئة/تبريد تحت الأرضية وتلفزيون</h4>
+            <p class="muted">أجواء مريحة تساعد الكلب على الاسترخاء.</p>
+          </article>
+
+          <article class="card">
+            <h4>خدمة التوصيل “من” و “إلى المكان”</h4>
+            <p class="muted">تسهيل عملية التسليم والاستلام عند الحاجة.</p>
+          </article>
+
+          <article class="card">
+            <h4>مراعي خارجية آمنة</h4>
+            <p class="muted">مساحات خارجية مناسبة للعب والتحرك بأمان.</p>
+          </article>
+
+          <article class="card">
+            <h4>خدمات بيطرية متاحة على مدار 24 ساعة</h4>
+            <p class="muted">طمأنة إضافية في حالات الطوارئ.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--soft">
+      <div class="container">
+        <h3 class="section__title">مرافق أخرى</h3>
+
+        <div class="grid">
+          <article class="card">
+            <h4>مراقبة الحيوانات الأليفة</h4>
+            <p class="muted">متابعة لضمان السلامة والراحة.</p>
+          </article>
+
+          <article class="card">
+            <h4>التمشية في الغابات</h4>
+            <p class="muted">نشاط خارجي ممتع لتفريغ الطاقة.</p>
+          </article>
+
+          <article class="card">
+            <h4>مساحة عشب خاصة</h4>
+            <p class="muted">منطقة خاصة للعب والحركة بحرية.</p>
+          </article>
+
+          <article class="card">
+            <h4>حظيرة لعب داخلية</h4>
+            <p class="muted">بديل ممتاز للأيام التي يكون فيها الجو غير مناسب.</p>
+          </article>
+        </div>
+
+        <div class="cta">
+          <div>
+            <h3>تحتاج تفاصيل أكثر؟</h3>
+            <p class="muted">تواصل معنا وسنجيبك على أي سؤال.</p>
+          </div>
+          <a class="btn btn--primary" href="contact.html">تواصل معنا</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Loving Homes. جميع الحقوق محفوظة.</p>
+      <a class="footer__link" href="contact.html">تواصل معنا</a>
+    </div>
+  </footer>
+
+  <script src="facilities.js"></script>
+</body>
+</html>

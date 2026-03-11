@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loving Homes | تواصل معنا</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <nav class="nav" id="mainNav" aria-label="التنقل الرئيسي">
+        <a class="nav__link" href="index.html">الرئيسية</a>
+        <a class="nav__link" href="facilities.html">المرافق</a>
+        <a class="nav__link" href="services.html">الخدمات</a>
+        <a class="nav__link" href="packages.html">الحزم</a>
+        <a class="nav__link nav__link--active" href="contact.html">تواصل معنا</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="فتح/إغلاق القائمة" aria-expanded="false">☰</button>
+
+      <div class="a11y-text" aria-label="أداة تغيير حجم النص">
+        <button class="a11y-btn" type="button" data-font="down" aria-label="تصغير النص">A-</button>
+        <button class="a11y-btn" type="button" data-font="reset" aria-label="حجم افتراضي">A</button>
+        <button class="a11y-btn" type="button" data-font="up" aria-label="تكبير النص">A+</button>
+        <span class="sr-only" id="fontStatus" aria-live="polite"></span>
+      </div>
+
+      <div class="brand" aria-label="Loving Homes">
+        <div class="brand__logo" aria-hidden="true">LH</div>
+        <div class="brand__text" dir="ltr">
+          <h1 class="brand__name">Loving Homes</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <div>
+          <h2>تواصل معنا</h2>
+          <p>أرسل رسالة قصيرة وسنرد عليك بأقرب وقت.</p>
+        </div>
+
+        <div class="info-card">
+          <h3>سريعًا</h3>
+          <p class="muted">يمكنك إرسال استفسار عن الحزم أو حجز موعد.</p>
+          <div class="mini">
+            <span class="mini__label">اليوم:</span>
+            <span class="mini__value" id="today"></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <form class="card form" id="contactForm" novalidate>
+          <h3 class="form__title">نموذج التواصل</h3>
+
+          <div class="field">
+            <label for="name">الاسم</label>
+            <input id="name" name="name" type="text" placeholder="اكتب اسمك" required />
+            <small class="error" id="errName"></small>
+          </div>
+
+          <div class="field">
+            <label for="email">البريد الإلكتروني</label>
+            <input id="email" name="email" type="email" placeholder="example@mail.com" required />
+            <small class="error" id="errEmail"></small>
+          </div>
+
+          <div class="field">
+            <label for="topic">الموضوع</label>
+            <select id="topic" name="topic">
+              <option value="استفسار عام">استفسار عام</option>
+              <option value="حجز">حجز</option>
+              <option value="حزمة مخصصة">حزمة مخصصة</option>
+              <option value="أسعار">أسعار</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="message">الرسالة</label>
+            <textarea id="message" name="message" rows="5" placeholder="اكتب رسالتك..." required></textarea>
+            <small class="error" id="errMessage"></small>
+          </div>
+
+          <div class="actions">
+            <button class="btn btn--primary" type="submit">إرسال</button>
+            <button class="btn btn--outline" type="reset">مسح</button>
+          </div>
+
+          <p class="success" id="successMsg" aria-live="polite"></p>
+        </form>
+
+        <aside class="card info">
+          <h3>معلومات التواصل</h3>
+          <p class="muted">ضع بياناتك هنا (يمكن تعديلها لاحقًا):</p>
+
+          <ul class="info-list">
+            <li><strong>الهاتف:</strong> +852 0000 0000</li>
+            <li><strong>البريد:</strong> info@lovinghomes.com</li>
+            <li><strong>الموقع:</strong> Hong Kong</li>
+            <li><strong>الوقت:</strong> 9:00 صباحًا – 7:00 مساءً</li>
+          </ul>
+
+          <div class="cta">
+            <p><strong>تفضل الحزم؟</strong></p>
+            <a class="btn btn--primary" href="packages.html">استعرض الحزم</a>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Loving Homes. جميع الحقوق محفوظة.</p>
+      <a class="footer__link" href="contact.html">تواصل معنا</a>
+    </div>
+  </footer>
+
+  <script src="contact.js"></script>
+</body>
+</html>

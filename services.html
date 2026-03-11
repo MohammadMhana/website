@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loving Homes | الخدمات</title>
+  <link rel="stylesheet" href="services.css" />
+</head>
+
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <nav class="nav" id="mainNav" aria-label="التنقل الرئيسي">
+        <a class="nav__link" href="index.html">الرئيسية</a>
+        <a class="nav__link" href="facilities.html">المرافق</a>
+        <a class="nav__link nav__link--active" href="services.html">الخدمات</a>
+        <a class="nav__link" href="packages.html">الحزم</a>
+        <a class="nav__link" href="contact.html">تواصل معنا</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="فتح/إغلاق القائمة" aria-expanded="false">☰</button>
+
+      <div class="a11y-text" aria-label="أداة تغيير حجم النص">
+        <button class="a11y-btn" type="button" data-font="down" aria-label="تصغير النص">A-</button>
+        <button class="a11y-btn" type="button" data-font="reset" aria-label="حجم افتراضي">A</button>
+        <button class="a11y-btn" type="button" data-font="up" aria-label="تكبير النص">A+</button>
+        <span class="sr-only" id="fontStatus" aria-live="polite"></span>
+      </div>
+
+      <div class="brand" aria-label="Loving Homes">
+        <div class="brand__logo" aria-hidden="true">LH</div>
+        <div class="brand__text" dir="ltr">
+          <h1 class="brand__name">Loving Homes</h1>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="page-hero">
+      <div class="container page-hero__inner">
+        <div>
+          <h2>الخدمات</h2>
+          <p>نظرة سريعة على أهم الخدمات التي نقدمها لضمان راحة كلبك.</p>
+        </div>
+
+        <div class="info-card">
+          <h3>معلومة سريعة</h3>
+          <p class="muted">اختر الخدمة التي تريدها ثم تواصل معنا للاستفسار أو الحجز.</p>
+          <a class="btn btn--primary" href="contact.html">تواصل معنا</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h3 class="section__title">خدماتنا الأساسية</h3>
+        <div class="grid">
+          <article class="card"><h4>إقامة مريحة</h4><p>غرف نظيفة ومريحة مع عناية يومية.</p></article>
+          <article class="card"><h4>تمشية ونشاطات</h4><p>مشي يومي ونشاطات مناسبة لطاقة الكلب.</p></article>
+          <article class="card"><h4>مناطق خارجية آمنة</h4><p>مساحات آمنة للعب والاستمتاع تحت إشراف.</p></article>
+          <article class="card"><h4>عناية ونظافة</h4><p>تنظيف أساسي وتجهيزات للحفاظ على النظافة.</p></article>
+          <article class="card"><h4>متابعة وطمأنة</h4><p>تحديثات بسيطة حسب الحاجة (صور/رسائل).</p></article>
+          <article class="card"><h4>دعم واستفسارات</h4><p>تواصل سهل وسريع لأي سؤال قبل/أثناء الإقامة.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p>© <span id="year"></span> Loving Homes. جميع الحقوق محفوظة.</p>
+      <a class="footer__link" href="contact.html">تواصل معنا</a>
+    </div>
+  </footer>
+
+  <script src="services.js"></script>
+</body>
+</html>
