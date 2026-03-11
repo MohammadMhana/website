@@ -21,15 +21,6 @@
 html,body{height:100%;}
 html{font-size:calc(16px * var(--font-scale));}
 
-html[data-theme="dark"]{
-  --bg:#0e1626;
-  --surface:#121c2f;
-  --text-1:#eaf0ff;
-  --text-2:rgba(234,240,255,0.85);
-  --border:rgba(255,255,255,0.16);
-  --shadow:0 10px 26px rgba(0,0,0,0.35);
-}
-
 body{
   margin:0;
   font-family:system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
@@ -277,4 +268,5 @@ html[data-theme="dark"] .info-card .muted{color:rgba(234,240,255,0.75);}
     flex-wrap:wrap;gap:8px;order:4;
   }
   .nav.nav--open{display:flex;}
+
 }
